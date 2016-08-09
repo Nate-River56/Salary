@@ -23,5 +23,6 @@ INNER JOIN
 ON
   salary.company_id = cpn.id
 WHERE
-  year == 2016
+  year         == 2016
+--  AND (cpn.business == 2 OR cpn.business == 6)
 ;

@@ -1,5 +1,5 @@
 SELECT 
-  cpn.business      AS '業種',
+  cpn.business      AS '業種ID',
   cpn.name          AS '会社名',
   member            AS '従業員数',
   ave_age           AS '平均年齢',
@@ -11,7 +11,7 @@ INNER JOIN
   SELECT 
     company.id    AS id,
     company.name  AS name,
-    business.name AS business
+    business.id AS business
   FROM
     company
   INNER JOIN

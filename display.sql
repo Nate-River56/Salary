@@ -12,7 +12,7 @@ INNER JOIN
   SELECT 
     company.id    AS id,
     company.name  AS name,
-    business.id AS business
+    business.id   AS business
   FROM
     company
   INNER JOIN
